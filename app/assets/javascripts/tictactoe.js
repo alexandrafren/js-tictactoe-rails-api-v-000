@@ -1,11 +1,17 @@
 var turn = 0
 var currentGame = 0
 
+<<<<<<< HEAD
 function player(){
   if (turn%2 == 0) {
     return 'X'
   } else {
     return 'O'
+=======
+function player() {
+  if ( turn % 2 == 0) {
+    return "X"
+>>>>>>> cf7dcbd4115a98c4b94f6944a8699e7e3b71968e
   }
 }
 
@@ -17,6 +23,7 @@ function setMessage(message){
   $("#message").text(message)
 }
 
+<<<<<<< HEAD
 function checkWinner(){
   var board = $("td")
   if (board[0].innerHTML === board[1].innerHTML && board[1].innerHTML === board[2].innerHTML && board[2].innerHTML !== ""){
@@ -76,6 +83,34 @@ function doTurn(position) {
     turn = 0
     currentGame = 0
     $("td").empty()
+=======
+function checkWinner() {
+  let winner = "";
+  if (turn > 5){
+    if ($("#0").text === $("#1").text === $("#2").text) {
+      winner = ($("#0").text;
+    }
+    else if ($("#3").text === $("#4").text === $("#5").text){
+      winner = $("#3").text;
+    }
+    else if ($("#6").text === $("#7").text === $("#8").text){
+      winner = $("#6").text;
+    }
+    else if ($("#0").text === $("#3").text === $("#6").text){
+      winner = ($("#0").text;
+    }
+    else if ($("#1").text === $("#4").text === $("#7").text){
+      winner = $("#1").text;
+    }
+    else if ($("#2").text === $("#5").text === $("#8").text){
+      winner = $("#2").text;
+    }
+    else if ($("#0").text === $("#4").text === $("#8").text){
+      winner = $("#0").text;
+    }
+    else if ($("#2").text === $("#4").text === $("#6").text){
+      winner = $("#2").text;
+>>>>>>> cf7dcbd4115a98c4b94f6944a8699e7e3b71968e
     }
   }
 
