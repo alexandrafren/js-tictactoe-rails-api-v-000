@@ -1,19 +1,12 @@
 var turn = 0
 var currentGame = 0
 
-<<<<<<< HEAD
+
 function player(){
   if (turn%2 == 0) {
     return 'X'
   } else {
     return 'O'
-=======
-function player() {
-  if ( turn % 2 == 0) {
-    return "X"
->>>>>>> cf7dcbd4115a98c4b94f6944a8699e7e3b71968e
-  }
-}
 
 function updateState(position){
   $(position).text(player())
